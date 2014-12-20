@@ -1,0 +1,4 @@
+TimeRecorder	KEYWORD1
+initialize	KEYWORD2
+record	KEYWORD2
+reset	KEYWORD2
