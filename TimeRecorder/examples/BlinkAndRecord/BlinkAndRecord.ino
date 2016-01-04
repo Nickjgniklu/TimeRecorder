@@ -29,7 +29,9 @@ void setup() {
 // flash led and store time every 1/2 second
 void loop() {
 
-  clock1.record();//will record time to epprom only if it has been more than a second since it recorded last.
+  clock1.record();//will record time to epprom only if it has been more than a second since it recorded last
+//  you must call this function alteast once per second 
+//  if you call the function more then once per second it will only right to eeprom once per second
   digitalWrite(led, HIGH);
 
   delay(500);
