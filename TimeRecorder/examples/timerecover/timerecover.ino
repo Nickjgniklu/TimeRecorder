@@ -7,7 +7,7 @@
 // make sure these adresses match the time record adresses
 //0,1,2 are the defualt adress from the time record library.
 byte adrHours =0; // eeprom location of the hours
-byte adrMins =1;// eeprom loaction of the minutes
+byte adrMins =1;// eeprom location of the minutes
 byte adrSecs =2;//eeprom  location of the seconds
 
 void setup(){

@@ -6,11 +6,11 @@
 // 1. Ground clearPin, by default this is pin 12
 //     when this pin is grounded on boot the eeprom values used will be cleared
 // 2. upload program that use time record
-// 3. pulg your arduino into what ever you will be measuring
+// 3. plug your arduino into what ever you will be measuring
 // 4. When your arduino has booted disconnect your clearPin from ground!!!!!
 //     if you forget step 4 when you go to upload the timerecover sketch you
 //     will lose your recored time
-// 5.when you are read to see how long your arduino was on upload time recover sketch
+// 5.when you are ready to see how long your arduino was on for, upload time recover sketch
 
 #include <TimeRecorder.h>
 #include <EEPROM.h>
@@ -20,7 +20,7 @@ TimeRecorder clock1(12);//(clearpin) deafult epprom adress of 0,1,2 are used.
 //chose your own epprom adresses
 //TimeRecorder clock1(0,1,2,12);(eprom adress1,eprom adress2,eprom adress3,clearpin)
 void setup() {
-  clock1.initialize();//clears epprom is clear pin is grounded
+  clock1.initialize();//clears epprom if clear pin is grounded
 
   pinMode(led, OUTPUT);
 
